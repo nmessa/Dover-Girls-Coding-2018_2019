@@ -37,6 +37,9 @@ def pen_up():
 
 def pen_down():
     t.pendown()
+
+def hide():
+    t.hideturtle()
         
 def keyboard_commands():
     t.screen.onkey(up,"Up")
@@ -46,6 +49,7 @@ def keyboard_commands():
     t.screen.onkey(undo_button,"End")
     t.screen.onkey(pen_up,"u")
     t.screen.onkey(pen_down,"d")
+    t.screen.onkey(hide,"h")
     t.screen.listen()
 
 keyboard_commands()
