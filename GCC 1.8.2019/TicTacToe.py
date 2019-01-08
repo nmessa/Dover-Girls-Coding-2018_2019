@@ -53,7 +53,7 @@ def start_game():
     return [[0, 0, 0] for x in range(3)]
 
 def display_game(game):
-    d = {2: "O", 1: "X", 0: "."}
+    d = {2: "O", 1: "X", 0: "_ "}
     game_string = []
     for row_num in range(3):
         new_row = []
